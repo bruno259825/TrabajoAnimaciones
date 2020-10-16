@@ -1,0 +1,52 @@
+/**GENERALES**/
+:root{
+    --bg-pri:rgba(139,196,63,1);
+    --bg-sec:#747fcc;    
+}
+
+.bg-pri{
+    background-color:var(--bg-pri);
+}
+
+.bg-sec{
+    background-color: var(--bg-sec); 
+}
+/*****MENU****/
+nav{
+    background: rgba(117,127,204,1);
+    background: -moz-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(117,127,204,1)), color-stop(87%, rgba(43,56,158,1)), color-stop(100%, rgba(43,56,158,1)));
+    background: -webkit-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
+    background: -o-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
+    background: -ms-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
+    background: linear-gradient(to right, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757fcc', endColorstr='#2b389e', GradientType=1 );
+    background-color: var(--bg-sec);
+}
+
+.nav-item a{
+    font-family: 'Chilanka', cursive;
+    font-weight: 600;
+    letter-spacing: text-white
+}
+
+.nav-item a:hover{    
+    box-shadow: 0px -3px 0px orange inset;
+    color: #eae9e9 !important;
+}
+.navbar-toggler:hover{
+    border:1px solid #fff;
+}
+.navbar-toggler:focus{
+    outline:none;
+}
+
+/**CARRUSEL**/
+
+.carousel-inner img{
+    
+    max-height: 500px;
+}
+
+
+
