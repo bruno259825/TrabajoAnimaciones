@@ -1,0 +1,27 @@
+<script>
+let oAlumnos=[];
+
+let iNalumnos=parseInt(prompt("Número de alumnos"));
+
+for(let i=0;i<iNalumnos;i++){
+    oAlumnos[i]=[prompt("Nombre del alumno"),0];
+}
+
+
+
+let tomarAsistencia=(nombre,presencia)=>{
+    if(buscaAlumno(nombre)!=-1 && presencia){
+        buscaAlumno(nombre)[1]++;
+    }
+}
+
+
+let buscaAlumno=nombre=>{
+    for(x of oAlumnos){
+        if(x[0]==nombre)
+            return x;
+    }
+
+    return -1;
+}
+</script>
