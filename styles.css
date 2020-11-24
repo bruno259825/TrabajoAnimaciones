@@ -1,48 +1,90 @@
 /**GENERALES**/
+
 :root{
-    --bg-pri:rgba(139,196,63,1);
+    --bg-pri:rgb(255 216 22);
     --bg-sec:#747fcc;    
 }
 
-.bg-pri{
-    background-color:var(--bg-pri);
-}
+.bg-pri{ background-color:var(--bg-pri) }
 
-.bg-sec{
-    background-color: var(--bg-sec); 
-}
-/*****MENU****/
-nav{
-    background: rgba(117,127,204,1);
-    background: -moz-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(117,127,204,1)), color-stop(87%, rgba(43,56,158,1)), color-stop(100%, rgba(43,56,158,1)));
-    background: -webkit-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
-    background: -o-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
-    background: -ms-linear-gradient(left, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
-    background: linear-gradient(to right, rgba(117,127,204,1) 0%, rgba(43,56,158,1) 87%, rgba(43,56,158,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757fcc', endColorstr='#2b389e', GradientType=1 );
-    background-color: var(--bg-sec);
-}
+.bg-sec{ background-color: var(--bg-sec) }
+
+.sombra{ text-shadow:0px 0px 5px #000000 }
+
+/**MENÚ**/
 
 .nav-item a{
     font-family: 'Chilanka', cursive;
     font-weight: 600;
-    letter-spacing: 30px;
+    
 }
 
-.nav-item a:hover{    
-    box-shadow: 0px -3px 0px orange inset;
+.nav-item a:hover{  box-shadow: 0px -3px 0px orange inset }
+
+#logo:hover{
+    animation-name: rotar;    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 50% !important;
 }
 
-
+@keyframes rotar{
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    to{
+        transform: rotate(360deg) scale(0.7);
+    }
+}
 
 
 /**CARRUSEL**/
 
-.carousel-inner img{
-    
-    max-height: 500px ;
+.carousel-inner img{  max-height: 500px }
+/**PRODUCTOS*/
+.titulo-productos{
+    color:rebeccapurple;
 }
+picture img{cursor: zoom-in;}
+
+picture img:active{
+    width:10px;
+}
+
+picture:hover{
+    animation-name: aumentar;    
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes aumentar{
+    from{
+        transform:  scale(1);
+    }
+    to{
+        transform:  scale(1.1);
+    }
+}
+
+/**MEDIAS QUERIES***/
+
+@media (max-width:576px){
+    
+    .cabeceras{ font-size:2rem !important }
+
+    .footer h3{ font-size: 1.2rem }
+
+    .footer img{ width:10vw }
+
+    /*CONTACTO*/
+    .mapa{
+        width: 280px;
+        height: 200px;
+    }
+    
+}
+
+
 
 
 

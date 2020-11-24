@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Centro de Ocio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--MENU-->
+        <div class="row bg-light">
+            <div class="col-12 menu ">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" src="https://png.pngtree.com/template/20190928/ourlarge/pngtree-kids-play-logo-design-template-image_312614.jpg"
+                            class="rounded" width="100" height="100" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link d-sm-block d-table" href="index.html#quien">Quiénes somos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link d-sm-block d-table" href="index.html#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-sm-block d-table" href="index.html#noticias">Noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-sm-block d-table"
+                                    href="http://bruno1234323.000webhostapp.com/mercha.html">Merchandising</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-md-5 d-sm-block d-table" href="info.html">Información</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- MIGAS DE PAN -->
+        <div class="row mt-3">
+            <div class="col-auto">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Formulario</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!--FORMULARIO-->
+        <form>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4 col-sm-6">
+                        <label for="inputNombre">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre">
+                        <small class="text-muted">
+                            ( * )
+                        </small>
+                    </div>
+                    <div class="form-group col-md-4 col-sm-6">
+                        <label for="inputApellidos">Apellidos</label>
+                        <input type="text" class="form-control" id="inputApellidos">
+                        <small class="text-muted">
+                            ( * )
+                        </small>
+                    </div>
+                    <div class="form-group col-md-4 col-12 col-sm-6">
+                        <label for="inputMovil">Teléfono Móvil</label>
+                        <input type="text" class="form-control" id="inputMovil">
+                        
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                            <small class="text-muted">
+                                ( * )
+                            </small>
+                        </div>
+                    </div>
+                               
+                    <div class="form-group col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="inputDireccion">Dirección</label>
+                            <input type="text" class="form-control" id="inputDireccion">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputProv">Provincia</label>
+                        <select id="inputProv" class="form-control">
+                            <option selected>Selecciona...</option>
+                            <option>Sevilla</option>
+                            <option>Valencia</option>
+                            <option>Almería</option>
+                            <option>Madrid</option>
+                            <option>Otra</option>
+                        </select>
+                        
+                    </div>
+                    
+                    <div class="form-group col-md-4 col-12 col-sm-6">
+                        <label for="inputLoc">Localidad</label>
+                        <input type="text" class="form-control" id="inputLoc">
+                        
+                    </div>
+                   
+
+                </div>
+                
+                <div class="form-group">
+                    <label for="inputArea">Escribe tus dudas</label>
+                    <textarea class="form-control" id="inputArea" rows="3"></textarea>
+                  </div>
+
+                  <div class="form-group text-muted">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Quiero recibir notificaciones sobre las próximas novedades a mi dirección de correo electrónico.
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Quiero recibir notificaciones sobre las próximas novedades a mi teléfono móvil.
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </form>
+
+
+
+
+
+        <!-- FOOTER -->
+        <div class="row bg-sec p-4 p-sm-4 mt-3 footer">
+            <div class="col-12 text-center text-white">
+                <h3>Síguenos en nuestras redes sociales para más contenido</h3>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-sm-3">
+                <a href="http://www.facebook.com" class="d-inline-block mx-3"><img src="imgs/social/facebook.svg"
+                        width="60" height="60" alt="Facebook"></a>
+                <a href="http://www.instagram.com" class="d-inline-block mx-3"><img src="imgs/social/instagram.svg"
+                        width="60" height="60" alt="Twitter"></a>
+                <a href="http://www.twitter.com" class="d-inline-block mx-3"><img src="imgs/social/twitter.svg"
+                        width="60" height="60" alt="Youtube"></a>
+            </div>
+
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

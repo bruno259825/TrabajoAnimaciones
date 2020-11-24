@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!--Estilos propios-->
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Centro de Ocio</title>
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
             <div class="col-12 menu ">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light">
                     <a class="navbar-brand" href="#">
-                        <img src="https://png.pngtree.com/template/20190928/ourlarge/pngtree-kids-play-logo-design-template-image_312614.jpg"
+                        <img id="logo" src="https://png.pngtree.com/template/20190928/ourlarge/pngtree-kids-play-logo-design-template-image_312614.jpg"
                             class="rounded" width="100" height="100" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -41,13 +41,17 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link d-sm-block d-table" href="#">Servicios</a>
+                                <a class="nav-link d-sm-block d-table" href="#servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-sm-block d-table" href="#noticias">Noticias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mr-md-5 d-sm-block d-table" href="#">Contacto</a>
+                                <a class="nav-link d-sm-block d-table"
+                                    href="http://bruno1234323.000webhostapp.com/mercha.html">Merchandising</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-md-5 d-sm-block d-table" href="http://bruno1234323.000webhostapp.com/info.html">Información</a>
                             </li>
                         </ul>
 
@@ -59,10 +63,10 @@
 
         <div class="jumbotron jumbotron bg-pri text-white mt-3">
             <h1 class="display-4 text-center cabeceras">¡No esperes más!</h1>
-            <p class="lead text-center sombra">Puedes adquirir tus entradas pulsando en el siguiente botón.</p>
+            <p class="lead text-center sombra">Cuentanos cualquiera de tus dudas.</p>
             <hr class="my-4 my-sm-3 bg-dark">
             <p class="lead p-0 text-center">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-lg" href="http://bruno1234323.000webhostapp.com/form.html" role="button">Enviar Mensaje</a>
             </p>
         </div>
 
@@ -107,55 +111,56 @@
         <div class="row" id="quien">
             <div class="col-12 bg-sec text-white py-4 mt-3">
                 <h1 class="display-4 text-center pb-4 cabeceras">¿Quiénes somos?</h1>
-                <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto
-                    necessitatibus eum labore dolorem molestiae laborum, commodi, blanditiis repudiandae voluptatum vel
-                    repellat quisquam ab perspiciatis saepe dolores exercitationem, aliquam provident.</p>
+                <p class="lead text-center">Somos una empresa líder en el sector, brindamos 
+                    servicios dirigidos al público infantil 
+                     ofreciendo siempre un trato de calidad a los peques de la familia. </p>
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <!-- SERVICIOS -->
+        <div class="row justify-content-center" >
             <div class="col-12 mt-4">
-                <h2 class="text-center">Nuestros Servicios</h2>
+                <h2 class="text-center" id="servicios">Nuestros Servicios</h2>
             </div>
-
+            
             <div class="col-auto d-flex justify-content-center mt-4">
 
                 <div class="card bg-pri" style="width: 18rem;">
                     <div class="card-header text-center text-white font-weight-bold">Fiestas infantiles</div>
-                    <img class="card-img-top " src="https://picsum.photos/id/12/50/50" alt="Card image cap">
+                    <img class="card-img-top " src="imgs/servicios/fiesta.jpg" alt="Card image cap">
                     <div class="card-body text-center pb-0">
-                        <p class="card-text text-white sombra">Some quick example text to build on the card title and
-                            make up the bulk of the card's content.</p>
+                        <p class="card-text text-white sombra">Ven y celebra tu cumple con nosotros.</p>
                     </div>
                     <div class="card-body text-center">
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="http://bruno1234323.000webhostapp.com/info.html" class="btn btn-primary">Ver entradas</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-auto  d-flex justify-content-center mt-4">
-                <div class="card bg-pri" style="width: 18rem;">
-                    <div class="card-header text-center text-white font-weight-bold">Fiestas infantiles</div>
-                    <img class="card-img-top " src="https://picsum.photos/id/12/50/50" alt="Card image cap">
-                    <div class="card-body text-center pb-0">
-                        <p class="card-text text-white sombra">Ven y celebra tu cumple con nosotros</p>
-                    </div>
-                    <div class="card-body text-center ">
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="col-auto  d-flex justify-content-center mt-4">
                 <div class="card bg-pri" style="width: 18rem;">
                     <div class="card-header text-center text-white font-weight-bold">Teatro</div>
-                    <img class="card-img-top " src="https://picsum.photos/id/12/50/50" alt="Card image cap">
+                    <img class="card-img-top " src="imgs/servicios/frozen.jpg" alt="Card image cap">
                     <div class="card-body text-center pb-0">
-                        <p class="card-text text-white sombra">Some quick example text to build on the card title and
-                            make up the bulk of the card's content.</p>
+                        <p class="card-text text-white sombra">Disfruta la interpretación de los cuentos
+                            clásicos.</p>
                     </div>
                     <div class="card-body text-center ">
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="http://bruno1234323.000webhostapp.com/info.html" class="btn btn-primary">Ver entradas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto  d-flex justify-content-center mt-4">
+                <div class="card bg-pri" style="width: 18rem;">
+                    <div class="card-header text-center text-white font-weight-bold">Patio de juegos</div>
+                    <img class="card-img-top " src="imgs/ocio2.jpg" alt="Card image cap">
+                    <div class="card-body text-center pb-0">
+                        <p class="card-text text-white sombra">Diviértete en los diferentes y amplios salones de juegos.</p>
+                    </div>
+                    <div class="card-body text-center ">
+                        <a href="http://bruno1234323.000webhostapp.com/info.html" class="btn btn-primary">Ver entradas</a>
                     </div>
                 </div>
             </div>
@@ -163,19 +168,25 @@
             <div class="col-auto  d-flex justify-content-center mt-4">
                 <div class="card bg-pri" style="width: 18rem;">
                     <div class="card-header text-center text-white font-weight-bold">Arcade</div>
-                    <img class="card-img-top " src="https://picsum.photos/id/12/50/50" alt="Card image cap">
+                    <img class="card-img-top " src="imgs/servicios/arcade.jpg" alt="Card image cap">
                     <div class="card-body text-center pb-0">
-                        <p class="card-text text-white sombra">Some quick example text to build on the card title and
-                            make up the bulk of the card's content.</p>
+                        <p class="card-text text-white sombra">Contamos con una gran variedad de juegos.</p>
                     </div>
                     <div class="card-body text-center ">
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="http://bruno1234323.000webhostapp.com/info.html" class="btn btn-primary">Ver entradas</a>
                     </div>
                 </div>
             </div>
-
+            <div class="col-12 text-center mt-3">
+                <audio controls autoplay loop>
+                    <source src="multimedia/fondo.mp3" type="audio/mpeg">
+                    
+                  Tu navegador no soporta el elemento audio.
+                  </audio>                  
+            </div>
         </div>
 
+        <!--NOTICIAS-->
         <div class="row justify-content-center">
             <div class="col-12 my-4" id="noticias">
                 <h2 class="text-center">Últimas Noticias</h2>
@@ -183,36 +194,33 @@
 
             <div class="col-md-4 col-sm-6 col-9">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://picsum.photos/id/686/100/50" alt="Card image cap">
+                    <img class="card-img-top" src="imgs/noticias/hallo.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Especial Halloween</h5>
+                        <p class="card-text">Espectáculos espeluznantes, fiestas tenebrosas y más...</p>
+                        <p class="card-text"><small class="text-muted">Hace 2 días</small></p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-6 col-9">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://picsum.photos/id/686/100/50" alt="Card image cap">
+                    <img class="card-img-top" src="imgs/noticias/nueva-sede.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Nueva sede</h5>
+                        <p class="card-text">Hemos abierto una nueva sede en la ciudad de Cádiz...</p>
+                        <p class="card-text"><small class="text-muted">Hace una semana</small></p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-6 col-9">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://picsum.photos/id/686/100/50" alt="Card image cap">
+                    <img class="card-img-top" src="imgs/noticias/nino-mascarilla.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">COVID-19</h5>
+                        <p class="card-text">Consulta nuestro nuevo protocolo ante el COVID-19...</p>
+                        <p class="card-text"><small class="text-muted">Hace un mes</small></p>
                     </div>
                 </div>
             </div>
@@ -222,7 +230,7 @@
         <!-- FOOTER -->
         <div class="row bg-sec p-4 p-sm-4 mt-3 footer">
             <div class="col-12 text-center text-white">
-                <h3>Siguenos en nuestras redes sociales para más contenido</h3>
+                <h3>Síguenos en nuestras redes sociales para más contenido</h3>
             </div>
             <div class="col-12 d-flex justify-content-center mt-sm-3">
                 <a href="http://www.facebook.com" class="d-inline-block mx-3"><img src="imgs/social/facebook.svg"
